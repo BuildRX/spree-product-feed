@@ -19,7 +19,9 @@ xml.rss(:version=>"2.0", "xmlns:g" => "http://base.google.com/ns/1.0"){
         end
 
         xml.tag!('g:price', product.price)
-        xml.tag!('g:condition', 'retail')
+        xml.tag!('g:condition', 'new')
+        xml.tag!('g:availability', 'in stock')
+        xml.tag!('g:google_product_category', '1604')
         xml.tag!('g:id', product.id)
       end
     end
